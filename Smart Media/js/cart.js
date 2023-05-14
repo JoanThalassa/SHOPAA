@@ -54,59 +54,28 @@ const openCart = () => {
 
 
 const xuatCart = (carts, Th_Cha) => {
+    console.log('carts', carts);
     Th_Cha.innerHTML = ""
     var noi_dung_HTML = ``
-    carts.forEach(tiviMua => {
-        let thanhTien = tiviMua.soluong * tiviMua.dongiaban
+
+    carts.forEach(itemMua => {
+        let thanhTien = itemMua.soluong * itemMua.dongiaban
         noi_dung_HTML += `
         <tr>
             <td scope="row" class="text-center">
-                <img src=${urlImg}/${tiviMua.maso}.png style="width:80px" />
+                <img src=${urlImg}/${itemMua.maso}.png style="width:80px" />
             </td >
-            <td class="text-nowrap">${tiviMua.ten}</td>
+            <td class="text-nowrap">${itemMua.ten}</td>
             <td class="text-right">
-                <input onchange="soLuong('${tiviMua.maso}',this)" type="number" min="1" max="10" value="${tiviMua.soluong}" class="text-right" />
+                <input onchange="soLuong('${itemMua.maso}',this)" type="number" min="1" max="10" value="${itemMua.soluong}" class="text-right" />
             </td>
-            <td class="text-right">${tiviMua.dongiaban.toLocaleString()}<sup>đ</sup></td>
-            <td class="text-right" id="tt${tiviMua.maso}">${thanhTien.toLocaleString()}<sup>đ</sup></td>
-            <td class='xoa text-center' onclick="xoaGiohang('${tiviMua.maso}')"> Xóa </td>
+            <td class="text-right">${itemMua.dongiaban.toLocaleString()}<sup>đ</sup></td>
+            <td class="text-right" id="tt${itemMua.maso}">${thanhTien.toLocaleString()}<sup>đ</sup></td>
+            <td class='xoa text-center' onclick="xoaGiohang('${itemMua.maso}')"> Xóa </td>
         </tr >
         `
     })
-    carts.forEach(dienthoaiMua => {
-        let thanhTien = dienthoaiMua.soluong * dienthoaiMua.dongiaban
-        noi_dung_HTML += `
-        <tr>
-            <td scope="row" class="text-center">
-                <img src=${urlImg}/${dienthoaiMua.maso}.png style="width:80px" />
-            </td >
-            <td class="text-nowrap">${dienthoaiMua.ten}</td>
-            <td class="text-right">
-                <input onchange="soLuong('${dienthoaiMua.maso}',this)" type="number" min="1" max="10" value="${dienthoaiMua.soluong}" class="text-right" />
-            </td>
-            <td class="text-right">${dienthoaiMua.dongiaban.toLocaleString()}<sup>đ</sup></td>
-            <td class="text-right" id="tt${dienthoaiMua.maso}">${thanhTien.toLocaleString()}<sup>đ</sup></td>
-            <td class='xoa text-center' onclick="xoaGiohang('${dienthoaiMua.maso}')"> Xóa </td>
-        </tr >
-        `
-    })
-    carts.forEach(foodMua => {
-        let thanhTien = foodMua.soluong * foodMua.dongiaban
-        noi_dung_HTML += `
-        <tr>
-            <td scope="row" class="text-center">
-                <img src=${urlImg}/${foodMua.maso}.png style="width:80px" />
-            </td >
-            <td class="text-nowrap">${foodMua.ten}</td>
-            <td class="text-right">
-                <input onchange="soLuong('${foodMua.maso}',this)" type="number" min="1" max="10" value="${foodMua.soluong}" class="text-right" />
-            </td>
-            <td class="text-right">${foodMua.dongiaban.toLocaleString()}<sup>đ</sup></td>
-            <td class="text-right" id="tt${foodMua.maso}">${thanhTien.toLocaleString()}<sup>đ</sup></td>
-            <td class='xoa text-center' onclick="xoaGiohang('${foodMua.maso}')"> Xóa </td>
-        </tr >
-        `
-    })
+
     noi_dung_HTML += `
         <tr>
                 <td colspan="6" id="Th_Tong" style="text-align: right;" class="text-danger"></td>
