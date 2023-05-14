@@ -1,0 +1,12 @@
+.activeNut{
+    background-color: rgb(164, 197, 223);
+    color: rgb(57, 175, 221);
+}
+
+.showcase video{
+    position: absolute;
+    height: 64%;
+    width: 100%;
+    object-fit: scale-down;
+    opacity: 0.5;
+  }
