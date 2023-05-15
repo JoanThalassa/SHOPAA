@@ -22,7 +22,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">Technology and Food</a>
+            <a class="navbar-brand" href="#!">T&F</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -43,7 +43,7 @@
                             <li><a class="dropdown-item" href="../food/">Thực phẩm</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe/">Liên hệ</a></li>
                 </ul>
                 <form class="d-flex">
                     <a href="../cart/cart.html">
@@ -60,11 +60,18 @@
     <!-- Header-->
     <header class="bg-success py-5" id="thCuahang"></header>
     <!-- Section-->
-    <section class="py-5">
+    <section class="py-5">      
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row">
-                <div style="margin-bottom:10px;" class="col-4" id="thNhoms"></div>
+                <div style="margin-bottom:10px;" class="col-4" id="thNhoms"><div>
+                    <button id="all" class="active">ALL</button>
+                    <button id="samsung">SAMSUNG</button>
+                    <button id="sony">SONY</button>
+                    <button id="khac">KHAC</button>
+                </div>
+                </div>
                 <div style="margin-bottom:10px;" class="col-8">
+                    
                     <button id="thTen" key-sort=0 class="nhom" onclick="sapxepTen(this)" >Tên &bigtriangleup;</button>
                     <button id="thGia" key-sort=0 class="nhom" onclick="sapxepGia(this)">Giá &bigtriangleup;</button>
                     <input type="range" name="" id="gia" min="5000000" max="60000000" onchange="Loc_Gia(this.value)"
@@ -95,6 +102,7 @@
     <script src="../js/home.js"></script>
     <script src="../js/tivi.js"></script>
     <script src="../js/cart.js"></script>
+    
 
     <script>
         if (sessionStorage.getItem("carts") != undefined) {

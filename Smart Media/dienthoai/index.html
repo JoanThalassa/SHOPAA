@@ -22,7 +22,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">Technology and Food</a>
+            <a class="navbar-brand" href="#!">T&F</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -43,7 +43,7 @@
                             <li><a class="dropdown-item" href="../food/">Thực phẩm</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe/">Liên hệ</a></li>
                 </ul>
                 <form class="d-flex">
                     <a href="../cart/cart.html">
@@ -60,7 +60,7 @@
     <!-- Header-->
     <header class="bg-success py-5" id="thCuahang"></header>
     <!-- Section-->
-    <section class="py-5">
+    <section class="py-20">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row">
                 <div style="margin-bottom:10px;" class="col-4" id="thNhoms"></div>
@@ -79,7 +79,7 @@
                
             </div>
             <h4 class="border-bottom border-success border-2 text-success" id="title">Smartphones</h4>
-            <div class="row gx-8 gx-lg-8 row-cols-8 row-cols-md-8 row-cols-xl-5" id="thDienthoai"></div>
+            <div class="row gx-20 row-cols-9 row-cols-md-5 row-cols-xl-5" id="thDienthoai"></div>
         </div>
     </section>
     <!-- Footer-->
@@ -109,7 +109,7 @@
                 // dsDienthoai=result;
                 // ds=dsDienthoai;
                 // xuatDienthoai(dsDienthoai,thDienthoai)
-                xuatKhuyenmai(result.slice(0,5),thDienthoai,3)
+                xuatKhuyenmai(result,thDienthoai,3)
                 // taoNhom();
                 // xuatNhom();
                 // activeNut();

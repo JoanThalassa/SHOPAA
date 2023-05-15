@@ -10,3 +10,14 @@
     object-fit: scale-down;
     opacity: 0.5;
   }
+.circle > span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: red; 
+
+}
+.space1{
+    margin-left: 50px;
+
+}

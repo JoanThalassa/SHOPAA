@@ -3089,14 +3089,16 @@ textarea.form-control-lg {
 }
 
 .btn-success {
-  color: #fff;
-  background-color: #198754;
-  border-color: #198754;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  background-color: #0f0d88;
+  border-color: #27af92;
 }
 .btn-success:hover {
-  color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  #000000;
+  background-color: #ffd000;
+  border-color: #fff5a0;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
   color: #fff;
@@ -3118,15 +3120,17 @@ textarea.form-control-lg {
   border-color: #198754;
 }
 
-.btn-info {
-  color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+.btn-infor {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  background-color: #0f0d88;
+  border-color: #27af92;
 }
-.btn-info:hover {
-  color: #000;
-  background-color: #31d2f2;
-  border-color: #25cff2;
+.btn-infor:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  #000000;
+  background-color: #ffd000;
+  border-color: #fff5a0;
 }
 .btn-check:focus + .btn-info, .btn-info:focus {
   color: #000;
@@ -3179,14 +3183,16 @@ textarea.form-control-lg {
 }
 
 .btn-danger {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  background-color: #0f0d88;
+  border-color: #27af92;
 }
 .btn-danger:hover {
-  color: #fff;
-  background-color: #bb2d3b;
-  border-color: #b02a37;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  #000000;
+  background-color: #ffd000;
+  border-color: #fff5a0;
 }
 .btn-check:focus + .btn-danger, .btn-danger:focus {
   color: #fff;
@@ -3487,9 +3493,9 @@ textarea.form-control-lg {
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  border-radius: 0.2rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 2 rem;
+  border-radius: 50%;
 }
 
 .fade {
@@ -4542,8 +4548,8 @@ textarea.form-control-lg {
 }
 
 .card-body {
-  flex: 1 1 auto;
-  padding: 1rem 1rem;
+  flex: 3 3 auto;
+  padding: 3rem 3rem;
 }
 
 .card-title {

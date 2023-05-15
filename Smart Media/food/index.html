@@ -22,7 +22,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">Technology and Food</a>
+            <a class="navbar-brand" href="#!">T&F</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -43,7 +43,7 @@
                             <li><a class="dropdown-item" href="../food/">Thực phẩm</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe/">Liên hệ</a></li>
                 </ul>
                 <form class="d-flex">
                      <a href="../cart/cart.html">
@@ -114,7 +114,7 @@
             // })
 
             apiFood().then(result=>{
-                xuatKhuyenmai(result.slice(0,5),thFood,2)
+                xuatKhuyenmai(result,thFood,2)
             })
             
         })

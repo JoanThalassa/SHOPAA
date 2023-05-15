@@ -44,6 +44,7 @@ const xuatTivi=(ds=[],tag, nhom=1)=>{
     })
 }
 
+
 const taoNhom=()=> {
     console.log('dsTivi', dsTivi);
     dsNhom = Array.from(new Set(dsTivi.map(x => x.Nhom.Ma_so))).map(Ma_so => {
